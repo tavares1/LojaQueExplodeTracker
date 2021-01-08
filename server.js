@@ -46,6 +46,12 @@ app.get('/fetchStatusOrder', async (req,res,next) => {
 })
 
 
+app.get('/', (req,res,next) => {
+    res.send({
+        "good luck":"have fun"
+    })
+})
+
 const PORT = process.env.PORT || 3000;
 
 app.listen(PORT, () => {

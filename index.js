@@ -51,8 +51,8 @@ class FedexService {
           index++;
         }
         idDocumento = idDocumento.join("");
-        let finalPosition = idDocumento.length;
         let initialPosition = idDocumento.indexOf(":");
+        let finalPosition = idDocumento.length;
         idDocumento = idDocumento.substring(initialPosition + 2, finalPosition);
         resolve(idDocumento)
       })
